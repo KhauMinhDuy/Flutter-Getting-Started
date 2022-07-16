@@ -1,0 +1,15 @@
+- Widgets
+	- Description of part of the user interface
+- State
+- Navigation
+- Connecting to External Service
+- Persisting data into your device
+
+
+** Why Flutter
+	- Code Reuse
+	- Fast Development
+	- Dart (Programming langguage)
+	- Performance
+	- Open Source / Community
+	
