@@ -1,4 +1,8 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
+import 'package:getting_started/screens/bmi_screen.dart';
+import 'package:getting_started/screens/intro_screen.dart';
 
 void main(List<String> args) {
   runApp(GlobeApp());
@@ -10,17 +14,14 @@ class GlobeApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Center(
-        child: Text('Hello World'),
-      ),
-    );
+        theme: ThemeData(
+          primaryColor: Colors.blueGrey
+        ),
+        routes: {
+          '/': (context) => IntroScreen(),
+          '/bmi': (context) => BmiScreen()
+        },
+        initialRoute: '/',
+      );
   }
 }
-
-// class GlobeApp extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     // TODO: implement build
-//     throw UnimplementedError();
-//   }
-// }
