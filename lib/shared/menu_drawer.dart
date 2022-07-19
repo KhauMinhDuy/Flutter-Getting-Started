@@ -1,7 +1,8 @@
 // ignore_for_file: prefer_const_constructors
 import 'package:flutter/material.dart';
-import '../screens/intro_screen.dart';
-import '../screens//bmi_screen.dart';
+import 'package:getting_started/screens/bmi_screen.dart';
+import 'package:getting_started/screens/intro_screen.dart';
+import 'package:getting_started/screens/weather_screen.dart';
 
 class MenuDrawer extends StatelessWidget {
   const MenuDrawer({Key? key}) : super(key: key);
@@ -43,6 +44,9 @@ class MenuDrawer extends StatelessWidget {
               break;
             case 'BMI Caculator':
               screen = BmiScreen();
+              break;
+            case 'Weather':
+              screen = WeatherScreen();
               break;
           }
           Navigator.of(context).pop();
