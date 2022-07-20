@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 class MenuBottom extends StatelessWidget {
@@ -17,6 +19,10 @@ class MenuBottom extends StatelessWidget {
           icon: Icon(Icons.monitor_weight),
           label: 'BMI'
         ),
+        BottomNavigationBarItem(
+          icon: Icon(Icons.ac_unit_sharp),
+          label: 'Weather'
+        ),
       ],
       onTap: (index) {
         switch (index) {
@@ -25,6 +31,9 @@ class MenuBottom extends StatelessWidget {
             break;
           case 1:
             Navigator.pushNamed(context, '/bmi');
+            break;
+          case 2:
+            Navigator.pushNamed(context, '/weather');
             break;
         }
       },

@@ -29,9 +29,7 @@ class MenuDrawer extends StatelessWidget {
     ));
 
     menuTitles.forEach((element) {
-      Widget screen = Container(
-
-      );
+      Widget screen = Container();
       menuItems.add(ListTile(
         title: Text(
           element,
