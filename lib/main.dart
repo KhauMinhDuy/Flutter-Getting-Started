@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:getting_started/screens/bmi_screen.dart';
 import 'package:getting_started/screens/intro_screen.dart';
+import 'package:getting_started/screens/session_screen.dart';
 import 'package:getting_started/screens/weather_screen.dart';
 
 void main(List<String> args) {
@@ -22,6 +23,7 @@ class GlobeApp extends StatelessWidget {
           '/': (context) => IntroScreen(),
           '/bmi': (context) => BmiScreen(),
           '/weather': (context) => WeatherScreen(),
+          '/training': (context) => SessionScreen()
         },
         initialRoute: '/',
       );

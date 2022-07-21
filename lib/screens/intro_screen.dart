@@ -9,7 +9,9 @@ class IntroScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Globo Fitness')),
+      appBar: AppBar(
+        title: Text('Globo Fitness'),
+      ),
       drawer: MenuDrawer(),
       bottomNavigationBar: MenuBottom(),
       body: Container(

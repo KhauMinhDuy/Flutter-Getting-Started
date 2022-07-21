@@ -23,6 +23,10 @@ class MenuBottom extends StatelessWidget {
           icon: Icon(Icons.ac_unit_sharp),
           label: 'Weather'
         ),
+        BottomNavigationBarItem(
+          icon: Icon(Icons.accessibility),
+          label: 'Training'
+        ),
       ],
       onTap: (index) {
         switch (index) {
@@ -35,8 +39,15 @@ class MenuBottom extends StatelessWidget {
           case 2:
             Navigator.pushNamed(context, '/weather');
             break;
+          case 3:
+            Navigator.pushNamed(context, '/training');
+            break;
         }
       },
+      backgroundColor: Colors.white60,
+      selectedItemColor: Colors.blueAccent,
+      unselectedItemColor: Colors.grey,
+      type: BottomNavigationBarType.fixed,
     );
   }
 }

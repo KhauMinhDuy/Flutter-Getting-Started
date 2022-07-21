@@ -1,7 +1,8 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, avoid_function_literals_in_foreach_calls
 import 'package:flutter/material.dart';
 import 'package:getting_started/screens/bmi_screen.dart';
 import 'package:getting_started/screens/intro_screen.dart';
+import 'package:getting_started/screens/session_screen.dart';
 import 'package:getting_started/screens/weather_screen.dart';
 
 class MenuDrawer extends StatelessWidget {
@@ -45,6 +46,9 @@ class MenuDrawer extends StatelessWidget {
               break;
             case 'Weather':
               screen = WeatherScreen();
+              break;
+            case 'Training':
+              screen = SessionScreen();
               break;
           }
           Navigator.of(context).pop();
